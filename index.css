@@ -1,7 +1,20 @@
 * {
     margin: 0px;
     padding: 0px;
+}
+
+body {
     font-family: "Yantramanav", sans-serif;
+    position: relative;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+}
+
+#header {
+    position: sticky;
+    top: 0;
 }
 
 /* top-line styling */
@@ -29,46 +42,49 @@
     display: flex;
     justify-content: space-between;
     padding: 5px 40px;
+    background-color: white;
 }
 
-.navigation-links {
+#navbar > div:first-child {
     display: flex;
     width: 40%;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.navigation-links > div:first-child > img {
+#navbar > div:first-child > div:first-child > img {
     width: 150px;
 }
 
-.navigation-links > div:last-child > ul > li {
+#navbar > div:first-child > div:last-child > ul > li {
     display: inline-block;
     margin: 0px 10px;
 }
 
-.navigation-links > div:last-child > ul > li > a{
+#navbar > div:first-child > div:last-child > ul > li > a{
     text-decoration: none;
     color: black;
 }
 
-.login-up {
+#navbar > div:last-child {
     display: flex;
     justify-content: center;
     align-items: baseline;
     padding: 5px 0px;
 }
 
-.login-up > div:first-child {
+#navbar > div:last-child > div:first-child {
     width: 300px;
 }
 
-.login-up > div:last-child {
+#navbar > div:last-child > div:last-child {
     margin-left: 15px;
     border-left: 1px solid lightslategray;
+    display: flex;
+    align-items: center;
 }
 
-.login-up > div input {
+#navbar > div:last-child > div input {
     padding: 10px 0px;
     font-size: 12px;
     box-shadow: none;
@@ -81,19 +97,19 @@
     padding-left: 50px;
 }
 
-.login-up a {
+#navbar > div:last-child a {
     text-decoration: none;
     margin-left: 15px;
     color: black;
     font-size: 18px;
 }
 
-.login-up i {
-    margin: 0px 7px;
+#navbar > div:last-child i {
+    margin: 0px 10px;
     font-size: 20px;
 }
 
-.login-up button {
+#navbar > div:last-child button {
     position: absolute;
     border: none;
     background: #eaeaea;
@@ -101,15 +117,24 @@
     margin-left: 7px;
 }
 
+#navbar > div:last-child > div:last-child > img {
+    width: 25px;
+    margin: 0px 10px;
+}
+
 /* Menu styling */
 
 #menu {
     display: flex;
-    width: 60%;
     margin: auto;
     padding: 15px 0px;
-    justify-content: space-around;
+    justify-content: center;
     font-size: larger;
+    background-color: white;
+}
+
+#menu > div {
+    margin: 0px 30px;
 }
 
 #menu > div > a {
@@ -156,5 +181,23 @@
 #random-products > div > img {
     width: 100%;
 }
+
+#trending {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
+    margin: 20px 60px;
+}
+
+#trending > div > img {
+    width: 100%;
+}
+
+#trending > div > span:last-child {
+    font-size: small;
+    text-decoration: line-through;
+}
+
+
 
 
