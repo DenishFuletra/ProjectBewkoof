@@ -10,6 +10,9 @@ body {
     position: relative;
     text-align: center;
 }
+a {
+    color: #42a2a2;
+}
 
 #header {
     position: sticky;
@@ -140,6 +143,7 @@ body {
 
 #menu > div {
     margin: 0px 30px;
+    padding: 10px 0px;
 }
 
 #menu > div > a {
@@ -148,7 +152,7 @@ body {
 }
 
 
-#menu > div > a:hover{
+#menu > div:hover {
     font-weight: bold;
     border-bottom: 5px solid #fdd835;
 }
@@ -175,6 +179,8 @@ body {
     width: 100%;
 }
 
+/* random products styling  */
+
 #random-products {
     display: grid;
     grid-template-columns: repeat(9,1fr);
@@ -187,7 +193,9 @@ body {
     width: 100%;
 }
 
-#trending {
+/* trending & new section styling */
+
+#trending, #new {
     display: grid;
     grid-template-columns: repeat(5,1fr);
     gap: 30px;
@@ -195,13 +203,57 @@ body {
     text-align: left;
 }
 
-#trending > div > img {
+#trending > div > img, #new > div > img {
     width: 100%;
 }
 
-#trending > div > span:last-child {
+#trending > div > span:last-child, #new > div > span:last-child {
     font-size: small;
     text-decoration: line-through;
+}
+
+/* categories styling */
+
+#categories {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 40px;
+    margin: 20px 50px;
+    
+}
+
+#categories img {
+    width: 100%;
+}
+
+a + h3 {
+    margin-top: 50px;
+}
+
+/* favourites styling */
+
+#favourites > div:first-child {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin: 10px;
+}
+
+#favourites > div > div > img {
+    width: 100%;
+}
+
+#favourites > div:last-child {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin: 10px;
+}
+
+div + a {
+    font-size: small;
+    font-weight: bold;
+    margin: 10px 0px;
 }
 
 /* footer styling */
@@ -293,6 +345,4 @@ body {
 #footer > div:first-child i {
     margin-right: 10px;
 }
-
-
 
