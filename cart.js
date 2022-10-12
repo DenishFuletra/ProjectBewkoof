@@ -196,7 +196,9 @@ function username(logindata){
     logindata.map(function(elem){
         document.querySelector("#username").innerText = elem.name;
     });
+    
 };
+
 
 
 
