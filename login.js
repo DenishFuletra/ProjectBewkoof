@@ -4,25 +4,21 @@ let loginData = [];
 function loginFxn(e) {
     e.preventDefault();
 
-    var obj = {};
+
 
     let email = document.querySelector('#email').value;
     let password = document.querySelector('#password').value;
     // let username = document.querySelector('#name').value
-
-
-    obj.email = email;
-    obj.password = password;
-    // obj.username = username;
-
     let present = data.filter(function (e) {
-        return email == e.email && password == e.password
+        if(email == e.email && password == e.password){
+            return e;
+        }
     })
 
-    loginData.push(obj);
-    console.log(data);
+    
+    console.log(present);
 
-    localStorage.setItem('loginData', JSON.stringify(loginData))
+    localStorage.setItem("loginData", JSON.stringify(present))
 
     if (present.length == 0) {
         alert("wrong details entered");
