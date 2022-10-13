@@ -7,12 +7,21 @@
 
 body {
     /* border: 2px solid red; */
-    width: 70%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
 
 
+}
+body>h1{
+    font-size: 25px;
+    margin-top: 25px;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
 }
 
 .footer {
@@ -46,12 +55,16 @@ img {
 }
 
 #payment {
-    margin-top: 100px;
+    margin-top: 20px;
+    background-color: ;
+    padding: 20px;
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    justify-content: center;
+    gap: 10px;
+    justify-content: flex-start;
     width: 100%;
+    /* border: 2px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 
 }
 
@@ -64,7 +77,7 @@ img {
 }
 
 #paymentRightSide {
-    width: 35%;
+    width: 60%;
 
 }
 
@@ -117,7 +130,10 @@ img {
 }
 
 .upi-desktop {
-    height: 40px;
+    height: 15px;
+}
+.upi-desktop1 {
+    height: 20px;
 }
 
 #payment-upi>div>div>input {
