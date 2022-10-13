@@ -66,23 +66,17 @@
 
 <script>
 
-    let Data = JSON.parse(localStorage.getItem("loginData"));
+    var navData = JSON.parse(localStorage.getItem("loginData"));
 
-    var obj = {};
-
-    let email = document.querySelector('#chnagetext').value;
-    // let username = document.querySelector('#name').value
-
-
-    obj.email = email;
+    navData.map(function (elem) {
+        document.querySelector("#chnagetext").innerText = elem.name;
+        console.log(elem.name);
+    });
 
 
-    Data.push(obj);
-    console.log(Data);
 
 
-    document.getElementById('chnagetext').innerHTML = "email";
-
+    // document.querySelector("#chnagetext").innerText = navData.name;
 
 
 
