@@ -11,6 +11,8 @@ body {
     text-align: center;
 }
 
+/* Header styling */
+
 #header {
     position: sticky;
     top: 0;
@@ -25,16 +27,17 @@ body {
     padding: 8px 0px;
 }
 
-#top-line > div {
+#top-line>div {
     display: flex;
     margin: 0px 50px;
 }
 
-#top-line > div > p {
+#top-line>div>p {
     margin: 0px 8px;
     font-size: x-small;
     letter-spacing: 1px;
 }
+
 /* Navbar Styling */
 
 #navbar {
@@ -47,49 +50,139 @@ body {
     letter-spacing: 2px;
 }
 
-#navbar > div:first-child {
+#navbar>div:first-child {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-#navbar > div:first-child > div{
+#navbar>div:first-child>div {
     margin: 0px 20px;
 }
 
-#navbar > div:first-child > div:first-child > img {
+.dropdown {
+    display: flex;
+    position: relative;
+}
+
+.dropdown > button {
+    margin: 0px 10px;
+    background-color: white;
+    border: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.dropdown > div {
+    position: absolute;
+    width: 70vw;
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: left;
+    line-height: 30px;
+    letter-spacing: normal;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+}
+
+.dropdown > div  ul {
+    list-style: none;
+    cursor: pointer;
+    color: grey;
+}
+
+.dropdown > div > div {
+    margin: 0px 20px;
+}
+
+.dropdown > div > div h3 {
+    margin: 10px 0px;
+}
+
+.dropdown > div:last-child > div:nth-child(2), .dropdown > div:last-child > div:nth-child(3) {
+    padding-top: 40px;
+}
+
+.dropdown > div:last-child > div:first-child > h3:first-child, .dropdown > div:last-child > div:last-child {
+    color: grey;
+}
+
+.dropdown > div:last-child > div:last-child  {
+    display: flex;
+}
+
+.dropdown > div:last-child > div:last-child > div {
+    display: block;
     width: 150px;
 }
 
-#navbar > div:first-child > div:last-child > ul > li {
+.dropdown > div:last-child > div:last-child > div > img {
+    width: 100%;
+}
+
+.dropdown > div > div:last-child {
+    border-left: 1px solid grey;
+    margin: 0px 30px;
+    padding: 0px 30px;
+}
+
+.dropdown > div > div:last-child img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.dropdown > div > div:last-child div {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+    width: 80%;
+}
+
+.dropdown > button:focus + div {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+}
+
+#navbar>div:first-child>div:first-child>img {
+    width: 150px;
+}
+
+#navbar>div:first-child>div:last-child>ul>li {
     display: inline-block;
     margin: 0px 5px;
 }
 
-#navbar > div:first-child > div:last-child > ul > li > a{
+#navbar>div:first-child>div:last-child>ul>li>a {
     text-decoration: none;
     color: black;
 }
 
-#navbar > div:last-child {
+#navbar>div:last-child {
     display: flex;
     justify-content: center;
     align-items: baseline;
     padding: 5px 0px;
 }
 
-#navbar > div:last-child > div:first-child {
+#navbar>div:last-child>div:first-child {
     width: 300px;
 }
 
-#navbar > div:last-child > div:last-child {
+#navbar>div:last-child>div:last-child {
     margin-left: 15px;
     border-left: 1px solid lightslategray;
     display: flex;
     align-items: center;
 }
 
-#navbar > div:last-child > div input {
+#navbar>div:last-child>div input {
     padding: 10px 0px;
     font-size: 12px;
     box-shadow: none;
@@ -102,19 +195,19 @@ body {
     padding-left: 50px;
 }
 
-#navbar > div:last-child a {
+#navbar>div:last-child a {
     text-decoration: none;
     margin-left: 15px;
     color: black;
     font-size: 18px;
 }
 
-#navbar > div:last-child i {
+#navbar>div:last-child i {
     margin: 0px 10px;
     font-size: 20px;
 }
 
-#navbar > div:last-child button {
+#navbar>div:last-child button {
     position: absolute;
     border: none;
     background: #eaeaea;
@@ -122,7 +215,7 @@ body {
     margin-left: 7px;
 }
 
-#navbar > div:last-child > div:last-child > img {
+#navbar>div:last-child>div:last-child>img {
     width: 25px;
     margin: 0px 10px;
 }
@@ -138,18 +231,20 @@ body {
     background-color: white;
 }
 
-#menu > div {
+#menu>div {
     margin: 0px 30px;
     padding: 10px 0px;
 }
 
-#menu > div > a {
+#menu>div>a {
     color: black;
     text-decoration: none;
 }
 
 
-#menu > div:hover {
+#menu>div:hover {
     font-weight: bold;
     border-bottom: 5px solid #fdd835;
 }
+
+/* end of header styling */
