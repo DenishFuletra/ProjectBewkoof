@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat, sans-serif;
+}
+
+body {
+    /* border: 2px solid red; */
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    /* margin: 10px 250px; */
+    /* flex-wrap: wrap; */
+    /* border: 2px solid rgb(171, 212, 49); */
+    width: 100%;
+}
+
+img {
+    height: 30px;
+    padding: 2px;
+}
+
+.footer>div>h2 {
+    /* signed as */
+    opacity: 0.5;
+    font-size: 12px;
+}
+
+.footer>div>h4 {
+    /* user name */
+    opacity: 1;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 2px;
+}
+
+#payment {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+
+}
+
+#paymentLeftSide,
+#paymentRightSide>div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+#paymentRightSide {
+    width: 35%;
+
+}
+
+#paymentLeftSide div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* border: 2px solid red; */
+    gap: 50px;
+    justify-content: flex-start;
+    padding-left: 15px;
+    height: 70px;
+    align-items: center;
+    font-size: 10px;
+    padding: 20px;
+
+}
+
+.allWalletPayment {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 10px;
+    gap: 80px;
+    /* border: 2px solid blue; */
+}
+
+.paymentMethod {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.paymentMethod>img {
+    width: 50px;
+    height: 50px;
+}
+
+#payment-upi>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    color: #525252;
+}
+
+.upi-desktop {
+    height: 40px;
+}
+
+#payment-upi>div>div>input {
+    width: 80%;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+#payment-upi>div>div>p {
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+#payment-upi>div>div>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+#payment-upi>div>div>button {
+    cursor: pointer;
+    margin-top: 25px;
+    width: 90%;
+    height: 40px;
+    font-size: 20px;
+    background-color: #dcdcdc;
+    border-style: none;
+    margin-left: 10px;
+}
+
+#payment-cod>div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+
+    align-items: center;
+}
+
+#payment-cod>div>button {
+    cursor: pointer;
+    margin-top: 15px;
+    width: 90%;
+    height: 40px;
+    font-size: 20px;
+    background-color: #dcdcdc;
+    border-style: none;
+    margin-left: 10px;
+}
+
+#payment-cod>div>h4 {
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+#payment-card>div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+#payment-card>div>div+div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+}
+
+#payment-card>div>div+div>div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 95%;
+    align-items: center;
+}
+
+#payment-card>div input {
+    height: 35px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 20px;
+}
+
+#payment-card>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    color: #525252;
+}
+
+.upi-desktop {
+    height: 40px;
+}
+
+#payment-card>div>input {
+    width: 80%;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+#payment-upi>div>div>p {
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+#payment-card>div>div>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#payment-card>div>div>button {
+    cursor: pointer;
+    margin-top: 15px;
+    width: 90%;
+    height: 40px;
+    font-size: 20px;
+    background-color: #dcdcdc;
+    border-style: none;
+    margin-left: 10px;
+}
