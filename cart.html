@@ -8,7 +8,6 @@
     <title>Cart</title>
 </head>
 <link href=cart.css rel="stylesheet">
-
 <body>
     <div class="footer">
         <img src="https://images.bewakoof.com/web/ic-desktop-normal-bwkf-logo.svg" alt="">
@@ -109,7 +108,9 @@
             <p>Whistles! Get extra 20% Cashback on prepaid orders above Rs.499. Coupon code - NEW20. Applicable for new
                 customers only!</p>
 
-            <p onclick="referall()">Have a Coupon / Referral / Gift Card ?</p>
+            <p>Have a Coupon / Referral / Gift Card ?
+                <input id="coupen" type="text" placeholder="Enter coupen code"><button onclick="coupenCode()">Redeem</button>
+            </p>
 
             <div class="totalprice">
                 <p>PRICE SUMMARY</p>
@@ -135,7 +136,7 @@
                 </div>
                 <div>
                     <!--5-->
-                    <p>You are saving  <span id="bagDiscount1">0</span> on this order </p>
+                    <p>You are saving <span id="bagDiscount1">0</span> on this order </p>
                 </div>
             </div>
             <div id="section2Bottom">

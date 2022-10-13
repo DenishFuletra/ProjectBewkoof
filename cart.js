@@ -192,12 +192,33 @@ function totalprice() {
     document.querySelector("#bagDiscount1").innerText = "₹" + bag;
 }
 
-function username(logindata){
-    logindata.map(function(elem){
+function username(logindata) {
+    logindata.map(function (elem) {
         document.querySelector("#username").innerText = elem.name;
     });
-    
+
 };
+function coupenCode() {
+    var promo = "bewkoof20";
+    var received = document.querySelector("#coupen").value;
+    var bag = document.querySelector("#bagDiscount").innerText;
+    var total = document.querySelector("#total").innerText;
+    total = total.slice(1);
+    bag = bag.slice(1);
+
+
+
+    if (received === promo) {
+        total = Math.floor((total * 80) / 100);
+        bag = Math.floor((bag * 120) / 100);
+        document.querySelector("#bagDiscount").innerText = "₹" + bag;
+        document.querySelector("#subtotal").innerText = "₹" + (total);
+        document.querySelector("#total").innerText = "₹" + (total);
+        document.querySelector("#bagDiscount1").innerText = "₹" + bag;
+        alert("Congralution you got 10% discount");
+    }
+
+}
 
 
 
