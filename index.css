@@ -79,6 +79,7 @@ body {
 
 .dropdown>div {
     position: absolute;
+    z-index: 1;
     width: 70vw;
     display: flex;
     margin: auto;
@@ -464,4 +465,105 @@ div+a {
 
 #footer>div:first-child i {
     margin-right: 10px;
+}
+
+/* Media queries */
+
+@media all and (max-width: 1100px) and (min-width:601px) {
+    /* Medium Screen Styles  */
+
+    #top-line {
+        display: none;
+    }
+
+    #navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #menu {
+        font-size: small;
+        flex-wrap: wrap;
+    }
+
+    #random-products {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    #trending {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    #categories {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    #favourites > div:first-child {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    #new {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    #footer {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media all and (max-width: 601px) and (min-width:200px) {
+    /* Small Screen Styles  */
+
+    #top-line {
+        display: none;
+    }
+
+    #navbar {
+        flex-wrap: wrap;
+    }
+
+    #navbar > div {
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    #menu {
+        font-size: small;
+        flex-wrap: wrap;
+    }
+
+    #top-banners {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    #random-products {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    #trending {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    #categories {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    #favourites > div:first-child {
+        grid-template-columns: repeat(1,1fr);
+    }
+    #favourites > div:last-child {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    #new {
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    
+    #footer {
+        grid-template-columns: repeat(1,1fr);
+        margin-bottom: 0px;
+    }
+
 }
