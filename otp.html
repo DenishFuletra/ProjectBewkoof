@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP</title>
+</head>
+<style>
+    div {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        margin: auto;
+        margin-top: 160px;
+        text-align: center;
+        font-family: montserrat, sans-serif;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+    img {
+        width: 70%;
+        margin: auto;
+        height: 150px;
+
+    }
+
+    div>h4 {
+        font-size: 30px;
+        height: 10px;
+        margin-top: -20px;
+    }
+
+    div>p {
+        padding: 5px;
+    }
+
+    div>input {
+        width: 80%;
+        height: 25px;
+        opacity: 0.7;
+    }
+
+    button {
+        width: 150px;
+        height: 25px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+</style>
+
+<body>
+    <div>
+        <img src="https://thumbor.forbes.com/thumbor/fit-in/x/https://www.forbes.com/advisor/in/wp-content/uploads/2022/07/Untitled-design-47.png"
+            alt="">
+        <h4>Verify OTP</h4>
+        <p>Enter OTP sent to you at your registered mobile number</p>
+        <input id="otp" type="password" placeholder="Enter the OTP">
+        <button onclick="order()">Verify</button>
+    </div>
+</body>
+
+</html>
+<script>
+    function order() {
+        var match = "1234";
+        var otp = document.querySelector("#otp").value;
+        if (otp === match) {
+            alert("Your order is successfully placed");
+            window.location.href = "index.html";
+        } else {
+            alert("Your Credential is wrong");
+        }
+    };
+
+</script>

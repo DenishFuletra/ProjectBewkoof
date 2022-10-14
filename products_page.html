@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>product page </title>
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="productPage.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <!-- navbar section starts from here -->
+    <div class=" navbar">
+
+
+
+        <div class="navigation-links">
+
+            <div class="logo">
+                <img src="https://images.bewakoof.com/web/ic-desktop-normal-bwkf-logo.svg" alt="logo">
+            </div>
+
+            <div>
+                <ul>
+                    <li><a href="#">MEN</a></li>
+                    <li><a href="#">WOMEN</a></li>
+                    <li><a href="#">MOBILE COVERS</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="login-up">
+
+
+            <div>
+                <button><i class="fa-solid fa-magnifying-glass"></i> </button>
+
+                <input type="search" placeholder="Search by product, category or collection">
+            </div>
+            <div>
+                <a id="chnagetext" href="siginUp.html">Login</a>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-sharp fa-solid fa-lock"></i>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- products section starts from here -->
+
+    <div id="products">
+        <div>
+            <ul>
+                <li> <a href="#">Home</a> /</li>
+                <li> <a href="#">Mens Clothing /</a></li>
+                <li><a href="#">Category</a></li>
+
+            </ul>
+        </div>
+
+
+        <h2 class="tag">Men Clothing</h2>
+
+        <!-- sorting -->
+
+        <div class="sort">
+            SORT BY &nbsp; <select name="" id="sortPrices" onchange="handlePriceSort()">
+                <option value="">Popular</option>
+                <option value="new">new</option>
+                <option value="htl">Price: High to Low</option>
+                <option value="lth">Price: Low to High</option>
+            </select>
+        </div>
+
+        <!-- Main section  -->
+        <div class="main_Section">
+
+            <!--  small section -->
+
+            <div class="small_Section">
+                <h3>FILTERS</h3>
+                <div class="sidenav">
+                    <button class="dropdown-btn">Gender
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Men</a>
+                        <a href="#">Women</a>
+                        <a href="#">Unisex 3</a>
+                    </div>
+                    <hr>
+
+                    <button class="dropdown-btn">Category
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">T-Shirt</a>
+                        <a href="#">Joggers</a>
+                        <a href="#">Boxers</a>
+                        <a href="#">Swaetshirt</a>
+                        <a href="#">Pyjamas</a>
+                        <a href="#">Dress</a>
+                        <a href="#">Vest</a>
+                        <a href="#">Hoodies</a>
+                        <a href="#">Cloth Mask</a>
+                        <a href="#">Swaeters</a>
+                        <a href="#">Mobile Covers</a>
+                        <a href="#">Mugs</a>
+                        <a href="#">Kurta</a>
+                        <a href="#">Shirt</a>
+                    </div>
+                    <hr>
+                    <button class="dropdown-btn">Sizes
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">XS</a>
+                        <a href="#">S</a>
+                        <a href="#">M</a>
+                        <a href="#">L</a>
+                        <a href="#">XL</a>
+                        <a href="#">2XL</a>
+                        <a href="#">3XL</a>
+                        <a href="#">4XL</a>
+                        <a href="#">5XL</a>
+                        <a href="#">6XL</a>
+                    </div>
+                    <hr>
+                    <button class="dropdown-btn">Brand
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <hr>
+                    <button class="dropdown-btn">Color
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <hr>
+                    <button class="dropdown-btn">Design
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <hr>
+                    <button class="dropdown-btn">Fit
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <hr>
+                    <button class="dropdown-btn">Sleeve
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <hr>
+                    <button class="dropdown-btn">Neck
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <hr>
+                    <button class="dropdown-btn">Type
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <hr>
+                    <button class="dropdown-btn">Ratings
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <hr>
+                    <button class="dropdown-btn">Offers
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <hr>
+                    <button class="dropdown-btn">Discount
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <hr>
+                    <button class="dropdown-btn">Sort By
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <hr>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+            <!-- Large section -->
+            <div id="large_Section">
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div id="footer">
+        <div>
+            <img src="https://www.investcorp.com/wp-content/uploads/2019/11/42_Bewakoof_Logo_Black.png"
+                alt="footer-logo" />
+            <h4>CUSTOMER SERVICE</h4>
+            <p>Contact Us</p>
+            <p>Track Order</p>
+            <p>Return Order</p>
+            <p>Cancel Order</p>
+            <div class="footer-bottom">
+                <p><i class="fa-solid fa-rotate-left"></i> 15 Day return policy <sup>*</sup></p>
+                <p><i class="fa-solid fa-indian-rupee-sign"></i> Cash on delivery <sup>*</sup></p>
+            </div>
+        </div>
+
+        <div>
+            <h4>COMPANY</h4>
+            <p>About Us</p>
+            <p>We're Hiring</p>
+            <p>Terms & Conditions</p>
+            <p>Privacy Policy</p>
+            <p>Blog</p>
+
+            <div class="footer-bottom">
+                <h4>DOWNLOAD THE APP</h4>
+                <img src="https://images.bewakoof.com/web/app_android_v1.png" alt="logo" />
+                <img src="https://images.bewakoof.com/web/app_ios_v1.png" alt="logo" />
+            </div>
+        </div>
+
+        <div>
+            <h4>CONNECT WITH US</h4>
+            <p>
+                <i class="fa-brands fa-square-facebook"></i> 4.7M People Like this
+            </p>
+            <p><i class="fa-brands fa-instagram"></i> 1M Followers</p>
+            <p>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-square-snapchat"></i>
+                <i class="fa-brands fa-apple"></i>
+            </p>
+
+            <div class="footer-bottom">
+                <h4>100% SECURE PAYMENT</h4>
+                <img src="https://images.bewakoof.com/web/secure-payments-image.png" alt="logo" />
+            </div>
+        </div>
+
+        <div>
+            <h4>KEEP UP TO DATE</h4>
+            <div>
+                <input type="email" placeholder="Enter Email Id" />
+                <button>SUBSCRIBE</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        });
+    }
+
+
+
+    // *********************************************************************************************************
+    // Displaying the mens data
+
+    var mensData = [
+
+        {
+            "image": "https://images.bewakoof.com/t640/men-s-blue-naruto-uzumaki-dattebayo-graphic-printed-oversized-t-shirt-547485-1665390064-1.jpg",
+            "url": "https://www.bewakoof.com/p/mens-blue-naruto-uzumaki-dattebayo-graphic-printed-oversized-t-shirt",
+            "name": "Men's Blue Naruto Uzumaki Dattebayo Graphic Printed Oversized T-shirt",
+            "name_url": "https://www.bewakoof.com/p/mens-blue-naruto-uzumaki-dattebayo-graphic-printed-oversized-t-shirt",
+            price: 449,
+            age: 12,
+            "price_url": "https://www.bewakoof.com/p/mens-blue-naruto-uzumaki-dattebayo-graphic-printed-oversized-t-shirt"
+        },
+        {
+            "image": "https://images.bewakoof.com/t640/men-s-black-naruto-uzumaki-dattebayo-graphic-printed-t-shirt-547482-1665390380-1.jpg",
+            "url": "https://www.bewakoof.com/p/mens-black-naruto-uzumaki-dattebayo-graphic-printed-t-shirt",
+            "name": "Men's Black Naruto Uzumaki Dattebayo Graphic Printed T-shirt",
+            "name_url": "https://www.bewakoof.com/p/mens-black-naruto-uzumaki-dattebayo-graphic-printed-t-shirt",
+            price: 349,
+            age: 10,
+            "price_url": "https://www.bewakoof.com/p/mens-black-naruto-uzumaki-dattebayo-graphic-printed-t-shirt"
+        },
+        {
+            "image": "https://images.bewakoof.com/t640/men-s-blue-see-you-never-graphic-printed-t-shirt-547477-1665390418-1.jpg",
+            "url": "https://www.bewakoof.com/p/mens-blue-see-you-never-graphic-printed-t-shirt",
+            "name": "Men's Blue See You Never Graphic Printed T-shirt",
+            "name_url": "https://www.bewakoof.com/p/mens-blue-see-you-never-graphic-printed-t-shirt",
+            price: 329,
+            age: 15,
+            "price_url": "https://www.bewakoof.com/p/mens-blue-see-you-never-graphic-printed-t-shirt"
+        },
+        {
+            "image": "https://images.bewakoof.com/t640/white-half-sleeve-t-shirt-105-1659608382-1.jpg",
+            "url": "https://www.bewakoof.com/p/white-plain-mens-round-neck-t-shirt",
+            "name": "White Half Sleeve T-Shirt",
+            "name_url": "https://www.bewakoof.com/p/white-plain-mens-round-neck-t-shirt",
+            price: 413,
+            age: 13,
+            "price_url": "https://www.bewakoof.com/p/white-plain-mens-round-neck-t-shirt"
+        },
+        {
+            "image": "https://images.bewakoof.com/t640/gohan-half-sleeve-t-shirt-512884-1655993277-1.jpg",
+            "url": "https://www.bewakoof.com/p/gohan-half-sleeve-t-shirt-men",
+            "name": "Men's Black Gohan Graphic Printed T-shirt",
+            "name_url": "https://www.bewakoof.com/p/gohan-half-sleeve-t-shirt-men",
+            price: 413,
+            age: 17,
+            "price_url": "https://www.bewakoof.com/p/gohan-half-sleeve-t-shirt-men"
+        },
+        {
+            "image": "https://images.bewakoof.com/t640/men-s-black-the-ghost-doctor-sleeve-oversize-fit-t-shirt-522523-1658997557-1.jpg",
+            "url": "https://www.bewakoof.com/p/mens-black-the-ghost-doctor-sleeve-oversize-fit-t-shirt",
+            "name": "Men's Black The Ghost Graphic Printed Oversized T-shirt",
+            "name_url": "https://www.bewakoof.com/p/mens-black-the-ghost-doctor-sleeve-oversize-fit-t-shirt",
+            price: 649,
+            age: 9,
+            "price_url": "https://www.bewakoof.com/p/mens-black-the-ghost-doctor-sleeve-oversize-fit-t-shirt"
+        },
+        {
+            "image": "https://images.bewakoof.com/t640/men-s-white-see-you-never-graphic-printed-oversized-t-shirt-547478-1665390027-1.jpg",
+            "url": "https://www.bewakoof.com/p/mens-white-see-you-never-graphic-printed-oversized-t-shirt",
+            "name": "Men's White See You Never Graphic Printed Oversized T-shirt",
+            "name_url": "https://www.bewakoof.com/p/mens-white-see-you-never-graphic-printed-oversized-t-shirt",
+            price: 449,
+
+            age: 12,
+            "price_url": "https://www.bewakoof.com/p/mens-white-see-you-never-graphic-printed-oversized-t-shirt"
+        },
+        {
+            "image": "https://images.bewakoof.com/t640/customizable-men-s-black-round-neck-t-shirt-443960-1655808173-1.jpg",
+            "url": "https://www.bewakoof.com/custom-design?pid=443960",
+            "name": "Customizable Men's Black T-shirt",
+            "name_url": "https://www.bewakoof.com/custom-design?pid=443960",
+            price: 499,
+            age: 18,
+            "price_url": "https://www.bewakoof.com/custom-design?pid=443960"
+        },
+        {
+            "image": "https://images.bewakoof.com/t640/men-s-black-oversized-t-shirt-439421-1659608155-1.jpg",
+            "url": "https://www.bewakoof.com/p/black-half-sleeve-relaxed-fit-t-shirt",
+            "name": "Men's Black Oversized T-shirt",
+            "name_url": "https://www.bewakoof.com/p/black-half-sleeve-relaxed-fit-t-shirt",
+            price: 551,
+            age: 7,
+            "price_url": "https://www.bewakoof.com/p/black-half-sleeve-relaxed-fit-t-shirt"
+        },
+        {
+            "image": "https://images.bewakoof.com/t640/game-over-minimal-half-sleeve-t-shirt-navy-blue-305202-1655748497-1.jpg",
+            "url": "https://www.bewakoof.com/p/game-over-minimal-half-sleeve-t-shirt-navy-blue",
+            "name": "Game Over Minimal Half Sleeve T-Shirt Navy Blue",
+            "name_url": "https://www.bewakoof.com/p/game-over-minimal-half-sleeve-t-shirt-navy-blue",
+            price: 413,
+
+            age: 16,
+            "price_url": "https://www.bewakoof.com/p/game-over-minimal-half-sleeve-t-shirt-navy-blue"
+        }
+
+
+
+
+
+    ]
+    displayProducts(mensData);
+    function displayProducts(result) {
+        document.querySelector('#large_Section').innerHTML = "";
+        result.map(function (e) {
+
+
+            var div = document.createElement('div');
+            div.setAttribute("class", "largeStyle");
+
+            var images = document.createElement('img');
+            images.setAttribute("src", e.image);
+
+
+            var priceBox = document.createElement("div");
+
+            var texts = document.createElement("h5");
+            texts.innerText = "Bewakoof"
+            texts.setAttribute("class", "H5tag");
+
+
+
+            var productName = document.createElement('p');
+            productName.innerText = e.name
+
+            var prices = document.createElement('p');
+            prices.innerText = "₹ " + e.price;
+            prices.setAttribute("class", "priceTag");
+
+            var priceLink = document.createElement('a');
+            //priceLink.setAttribute("href", e.price_url)
+            priceLink.href = "product2page.html";
+            priceLink.innerText = '₹419 For Tribe Members';
+            priceLink.setAttribute("class", "price_link");
+
+
+            var text = document.createElement("h6");
+            priceBox.append(images, texts, productName, prices, priceLink);
+            div.append(priceBox);
+
+            document.querySelector('#large_Section').append(div);
+
+        })
+    }
+
+    //   sorting js starts from here
+
+    // const res = JSON.parse(mensData);
+    // // const res2 = JSON.parse(res);
+
+
+
+    // res.push(obj);
+    // console.log(res)
+
+    function handlePriceSort() {
+        var selelectedvalue = document.getElementById("sortPrices").value;
+        let result = [];
+        console.log(selelectedvalue);
+        if (selelectedvalue === "lth") {
+            result = mensData.sort(function (a, b) {
+                return a.price - b.price;
+            });
+        }
+        if (selelectedvalue === "htl") {
+            result = mensData.sort(function (a, b) {
+                return b.price - a.price;
+            });
+
+        }
+
+        if (selelectedvalue === "new") {
+            displayProducts(mensData);
+        }
+        else {
+            displayProducts(result);
+        }
+
+        console.log(result)
+
+    }
+
+    //localStorage.setItem('datas', JSON.stringify(mensData));
+
+    var navData = JSON.parse(localStorage.getItem("loginData"));
+
+    navData.map(function (elem) {
+        document.querySelector("#chnagetext").innerText = elem.name;
+        console.log(elem.name);
+    });
+
+
+</script>

@@ -1,0 +1,163 @@
+
+/* *********Products Page css***************************** */
+#products {
+    width: 1170px;
+    margin: auto;
+}
+
+#products>div ul li {
+    display: inline-block;
+    margin: 0px 6px;
+}
+
+#products>div ul li a {
+    text-decoration: none;
+    color: rgb(48, 41, 41);
+}
+
+.tag {
+    margin-top: 40px;
+    margin-left: 30px;
+    font-size: 28px;
+    border-bottom: 3px solid orangered;
+    width: 15%;
+}
+
+/* section divided css */
+
+.main_Section {
+    width: 98%;
+    display: flex;
+    margin-left: 30px;
+
+}
+
+/* small section css */
+.small_Section {
+    width: 30%;
+    margin-top: -22px;
+}
+
+/* Fixed sidenav, full height */
+.small_Section .sidenav {
+    height: 100%;
+    width: 290px;
+    top: 0;
+    left: 0;
+
+    padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.small_Section .sidenav a,
+.dropdown-btn {
+    padding: 6px 8px 6px 4px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #2d2c2c;
+    display: flex;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    margin-right: 20px;
+}
+
+.small_Section .sidenav a:hover,
+.dropdown-btn:hover {
+    color: #ef6102;
+
+}
+
+
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.small_Section .dropdown-container {
+    display: none;
+    padding-left: 8px;
+
+}
+
+/* Optional: Style the caret down icon */
+.small_Section .fa-angle-down {
+    float: right;
+    padding-right: 10px;
+    position: absolute;
+    left: 30%;
+    font-size: 18px;
+    color: #545353;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+    .small_Section .sidenav {
+        padding-top: 15px;
+    }
+
+    .small_Section .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+/* ****large section products page css */
+
+#large_Section {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+
+}
+
+#large_Section img {
+    width: 100%;
+}
+
+.H5tag {
+    font-size: 16px;
+    margin: 0px 1px;
+    color: #2e2d2d;
+}
+
+.priceTag {
+    font-size: 18px;
+    margin-top: -14px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.price_link {
+    text-decoration: none;
+    color: orangered;
+    font-weight: 500;
+    background-color: #f2f2f2;
+}
+
+.small_Section h3 {
+    color: rgb(74, 73, 73);
+}
+
+/* sorting css */
+
+.sort {
+    float: right;
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: 800;
+    color: #817f7f;
+
+}
+
+
+.sort select {
+    border: none;
+    outline: none;
+    font-size: 15px;
+
+
+}
+
