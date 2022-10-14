@@ -1,0 +1,251 @@
+
+body{
+    font-family: montserrat-bold,sans-serif;
+    font-size: 13px;
+}
+#firstRowImg{
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    transition:all 0.5s ease-out ;
+}
+
+#linetaxt>p{
+        display: block;
+        /* Important to give the content a width */
+    
+        width: 100%;
+        transform: translateX(100%);
+        /* Animation start out of the screen */
+        animation: move 12s linear infinite;
+            
+    }
+    /* Create the animation */
+    @keyframes move {
+        to {
+            transform: translateX(-100%);
+        }
+    }
+#firstRowImg > div{
+    height: 450px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+#firstRowImg> div> img{
+    width: 100%;
+    height: 100%;
+   
+}
+#banner>img{
+    width:100%;
+}
+#categories{
+    display:grid;
+    grid-template-columns: repeat(9,1fr);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+    justify-content: center;
+   
+}
+#categories>div{
+    height:180px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#categories>div>img{
+height:80%;
+width: 100%;
+margin:-10px ;
+}
+#popularCategories{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-content: space-between;
+    gap: 15px;
+    margin: 20px;
+}
+#popularCategories>div{
+    height:300px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+#popularCategories>div>img{
+height:80%;
+width: 70%;
+}
+#popularCategories>div>a>h3{
+    color: gray;
+    font-size: 15px;
+}
+body>h2{
+    text-align: center;
+}
+#fourBlokImg{
+    text-align: center;
+    margin-bottom: 15px;
+}
+body>h3{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: small;
+}
+#fourBlokImg>div>img{
+    width: 49%;
+    margin-left: 0.5%;
+    margin-top: 0.5%;
+}
+#bestsellerMen{
+    display:flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+#bestsellerMen>div{
+    height:80%;
+    width: 100%;
+}
+#bestsellerMen>div>img{
+    height:80%;
+    width: 95%;
+    margin-left: 2px;
+}
+ 
+#bestsellerMen>div>h4>span{
+    /* color:gray; */
+    margin-left: 2%;
+    text-decoration: line-through;
+    justify-content: space-between;
+}
+#viewall{
+    text-align: center;
+    margin-top: 30px;
+    color: teal;
+}
+#secondSliderRow{
+    display:flex;
+    transition:all 0.5s ease-out ;
+    margin: auto;
+    margin-top: 20px;
+}
+#secondSliderRow > div{
+    height:450px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 2%;
+}
+#secondSliderRow> div > img{
+    height:100%;
+    width: 100%;
+}
+#bargainCorner{
+    display:flex;
+    margin-top: 20px;
+    
+}
+#bargainCorner > div{
+    width: 100%;
+    height:100%;
+    margin-bottom: 10px;
+}
+#bargainCorner> div > img{
+    height:100%;
+    width: 100%;
+}
+/* footer styling starts here*/
+
+#footer {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    background-color: black;
+    color: white;
+    padding: 50px;
+    font-size: 10px;
+
+}
+
+#footer > div {
+    height: 250px;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+}
+
+#footer > div:first-child  h4 {
+    color: #fdd835;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#footer > div:first-child  img {
+    background-color: #fdd835;
+    width: 120px;
+    padding: 0;
+}
+
+#footer > div:first-child ~ div h4 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #fdd835;
+}
+
+#footer > div:last-child > div {
+    display: flex;
+}
+
+#footer > div:last-child > div > input {
+    background-color: black;
+    color: grey;
+    border: none;
+    padding: 8px;
+    border-bottom: 1px solid #fdd835;
+}
+
+#footer > div:last-child > div > button {
+    background-color: #fdd835;
+    color: black;
+    padding: 10px 20px;
+}
+
+#footer > div > p {
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.footer-bottom {
+    position: absolute;
+    bottom: 20px;
+    line-height: 20px;
+    
+}
+
+#footer > div:nth-child(2) > .footer-bottom  img {
+    width: 40%;
+}
+
+#footer > div:nth-child(3) > .footer-bottom  img {
+    width: 100%;
+    margin-bottom: 10px;
+} 
+
+#footer i {
+    height: 30px;
+}
+
+#footer > div:nth-child(3) > p:nth-child(4) > i {
+    margin-right: 15px;
+    
+}
+
+#footer > div:first-child i {
+    margin-right: 10px;
+}
+
+/* footer styling ends here */

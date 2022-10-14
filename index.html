@@ -406,7 +406,7 @@
             />
           </div>
           <div>
-            <a href="login.html">Login</a>
+            <a id="chnagetext" href="login.html">Login</a>
             <i class="fa-regular fa-heart"></i>
             <a href="cart.html">
               <i class="fa-solid fa-bag-shopping"></i>
@@ -781,5 +781,12 @@
         window.location.href = "products_page.html";
       })
     })
+
+    var navData = JSON.parse(localStorage.getItem("loginData"));
+
+    navData.map(function (elem) {
+        document.querySelector("#chnagetext").innerText = elem.name;
+        console.log(elem.name);
+    });
   </script>
 </html>
