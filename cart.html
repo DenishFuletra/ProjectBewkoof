@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+<link href=cart.css rel="stylesheet">
+<body>
+    <div class="footer">
+        <img src="https://images.bewakoof.com/web/ic-desktop-normal-bwkf-logo.svg" alt="">
+        <div>
+            <h2>Signed as</h2>
+            <h4 id="username">fuletradenish@gmail.com</h4>
+        </div>
+    </div>
+    <hr style="margin-top: 20px;">
+    <h2>My Bag <span id="tItem"> 0 </span> item(s)</h2>
+    <div id="cart">
+        <div class="section1">
+            <p> <span><img class="truckmove" src="https://images.bewakoof.com/web/Red-truck.png" alt="truck"
+                        style="width: 23px; height: 15px; animation-duration: 3s;"></span>Yay! You get FREE delivery on
+                this order</p>
+            <div id="final">
+                <!-- <div id="cartitem">
+                <div>
+                    <div>
+                        <h1> Big Herbal Weed Lightweight Adjustable Strap Men Slider</h1>
+                        <h2><span> 597</span> ₹<span> 1099</span></h2>
+                        <p> You saved ₹502!</p>
+                        <div class="button">
+                            <p>Size:</p>
+                            <p>Qty:<select id="Qty">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                </select></p>
+
+                        </div>
+                    </div>
+                    <img src="https://images.bewakoof.com/t320/big-herbal-weed-lightweight-adjustable-strap-men-slider-333615-1655749605-1.jpg"
+                        id="productimg" alt="">
+                </div>
+                <hr style="opacity: .2;">
+                <div class="remove">
+                    <p>Remove</p>
+                    <p>Move to Wishlist</p>
+                </div>
+            </div>
+
+            <div id="cartitem">
+                <div>
+                    <div>
+                        <h1> Big Herbal Weed Lightweight Adjustable Strap Men Slider</h1>
+                        <h2> ₹597 ₹1099</h2>
+                        <p> You saved ₹502!</p>
+                        <div class="button">
+                            <p>Size:</p>
+                            <p>Qty: <select id="Qty">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                </select></p>
+                        </div>
+                    </div>
+                    <img src="https://images.bewakoof.com/t320/big-herbal-weed-lightweight-adjustable-strap-men-slider-333615-1655749605-1.jpg"
+                        id="productimg" alt="">
+                </div>
+                
+                <hr style="opacity: .2;">
+                <div class="remove">
+                    <p>Remove</p>
+                    <p>Move to Wishlist</p>
+                </div>
+            </div> -->
+            </div>
+
+
+
+        </div>
+        <div class="section2">
+            <p>Save extra ₹150 with TriBe</p>
+            <p>Whistles! Get extra 10% Cashback on prepaid orders above Rs.699. Coupon code - MAD10.</p>
+
+            <p>Get upto Rs.250 cashback on orders above Rs.499 on Paytm Wallet and Paytm Postpaid</p>
+
+            <p>Get Rs.200 instant discount on your First Purchase above Rs.999. Coupon code - NEW200</p>
+
+            <p>Whistles! Get extra 20% Cashback on prepaid orders above Rs.499. Coupon code - NEW20. Applicable for new
+                customers only!</p>
+
+            <p>Whistles! Get extra 20% Cashback on prepaid orders above Rs.499. Coupon code - NEW20. Applicable for new
+                customers only!</p>
+
+            <p>Have a Coupon / Referral / Gift Card ?
+                <input id="coupen" type="text" placeholder="Enter coupen code"><button onclick="coupenCode()">Redeem</button>
+            </p>
+
+            <div class="totalprice">
+                <p>PRICE SUMMARY</p>
+                <div>
+                    <!--1-->
+                    <p>Total MRP (Incl. of taxes) </p>
+                    <p id="totalMRP">0</p>
+                </div>
+                <div>
+                    <!--2-->
+                    <p>Shipping Charges </p>
+                    <p>Free</p>
+                </div>
+                <div>
+                    <!--3-->
+                    <p>Bag Discount </p>
+                    <p id="bagDiscount">0</p>
+                </div>
+                <div>
+                    <!--4-->
+                    <p>Subtotal </p>
+                    <p id="subtotal">0</p>
+                </div>
+                <div>
+                    <!--5-->
+                    <p>You are saving <span id="bagDiscount1">0</span> on this order </p>
+                </div>
+            </div>
+            <div id="section2Bottom">
+                <div>
+                    <p>Total</p>
+                    <p id="total"> 0</p>
+                </div>
+                <button onclick="gotoaddress()"
+                    style="width: 250px;background-color: rgb(66, 162, 162); color: white; border: none; font-size: 17px; border-radius: 10px;">Add
+                    Address</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+<script src="cart.js"></script>
