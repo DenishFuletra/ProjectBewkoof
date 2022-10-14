@@ -219,6 +219,9 @@ function coupenCode() {
     }
 
 }
+function gotoaddress(){
+    window.location.href = "address.html";
+}
 
 
 
