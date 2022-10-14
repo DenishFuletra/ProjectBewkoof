@@ -41,7 +41,7 @@ var datamen = [
     }
 ];
 // localStorage.setItem("data",JSON.stringify(datamen));
-var data = JSON.parse(localStorage.getItem("data")) || [];
+var data = JSON.parse(localStorage.getItem("cartData")) || [];
 var logindata = JSON.parse(localStorage.getItem("loginData"));
 username(logindata);
 addcart(data);
@@ -140,21 +140,21 @@ function addcart(data) {
 
 function removeItem(index) {
     data.splice(index, 1);
-    localStorage.setItem("data", JSON.stringify(data));
+    localStorage.setItem("cartData", JSON.stringify(data));
     addcart(data);
 }
 
 function changeQty(elem) {
     elem.Qty = document.querySelector("select").value;
     // console.log(elem.Qty);
-    localStorage.setItem("data", JSON.stringify(data));
+    localStorage.setItem("cartData", JSON.stringify(data));
     addcart(data);
 }
 
 function increaseQty(elem) {
     var qty = +elem.Qty + 1;
     elem.Qty = qty;
-    localStorage.setItem("data", JSON.stringify(data));
+    localStorage.setItem("cartData", JSON.stringify(data));
     addcart(data);
 }
 function decreaseQty(elem, index) {
@@ -162,11 +162,11 @@ function decreaseQty(elem, index) {
     var qty = +elem.Qty - 1;
     if (qty == 0) {
         data.splice(index, 1);
-        localStorage.setItem("data", JSON.stringify(data));
+        localStorage.setItem("cartData", JSON.stringify(data));
 
     } else {
         elem.Qty = qty;
-        localStorage.setItem("data", JSON.stringify(data));
+        localStorage.setItem("cartData", JSON.stringify(data));
 
     }
     addcart(data);
