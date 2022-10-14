@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Page</title>
+    <link rel="stylesheet" href="mens_prod.css">
+</head>
+<style>
+    form{
+        font-family: montserrat-bold,sans-serif;
+        font-size: 15px;
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 40%;
+        box-shadow: rgba(117, 117, 112, 0.2) 0px 0.1px 5px 5px;
+        padding: 30px;
+        border-radius: 15px;
+        color: black;
+    }
+    #main{
+        display: grid;
+        gap: 10%;
+        width: 100%;
+    }
+    #main>input{
+        height: 35px;
+        border-radius: 5px;
+        /* background-color: rgb(161, 240, 232);
+        border-color: rgb(161, 240, 232);  */
+        position:initial;
+        /* color: black; */
+    }
+    #country{
+        height: 35px;
+        border-radius: 5px;
+        /* background-color: bisque; */
+    }
+    #main>div{
+        display: flex;
+       width: 100%;
+       margin: auto;
+       justify-content: space-between;
+        
+    }
+    #main>div>input{
+        height: 35px;
+        width: 48%;
+        border-radius: 5px;
+        margin-right: -2px;
+        /* background-color: rgb(161, 240, 232);
+        border-color: rgb(161, 240, 232); */
+    }
+    #btn{
+        background-color: white;
+        border-radius: 20px;
+        margin-right: 10px;
+        padding: 5px 10px 5px 10px;
+        border-color:rgb(64, 62, 62);
+        margin-top: 5px;
+        background-color:azure;
+    }
+    p{
+        background-color: white;
+        font-size: 20px;
+        color: black;
+        margin-top:230px;
+    }
+    #lastBtn{
+        text-align: center;
+    }
+     #lastBtn>.submit{
+        width: 40%;
+        padding:15px;
+        margin-top: 40px;
+        margin-bottom: 25px;
+        border-radius: 10px;
+        background-color: green;
+        color: white;
+        border-color: green;
+        text-align: center;
+    }
+    #lastBtn>.cancel{
+        width: 40%;
+        padding:15px;
+        margin-top: 40px;
+        margin-bottom: 25px;
+        border-radius: 10px;
+        color: white;
+        border-color:rgb(228, 76, 76);
+        background-color: rgb(228, 76, 76);
+        text-align: center;
+    }
+</style>
+<body>
+    <form>
+    <h1>Add Aew Address</h1>
+    
+    <div id = "main">
+        <select id="country">
+            <option value="">Country</option>
+            <option value="">INDIA</option>
+            <option value="">UAE</option>
+        <input placeholder="Full Name">
+        <input placeholder="Mobile Number.">
+        <input placeholder="Pin Code">
+        <div>
+            <input placeholder="City"> 
+            <input placeholder="State">
+        </div> 
+        <input type="taxt" placeholder="Flat no/Building, Street name">
+        <input  placeholder="Area/Locality">
+        <input placeholder="Landmark(optionl)">
+    </div>
+    <div>
+        <p>Save Address As</p>
+        <Button id ="btn">HOME</Button>
+        <Button id ="btn">OFFICE</Button>
+        <Button id ="btn">OTHER</Button>
+    </div>
+    <div id="lastBtn">
+        <button class="submit">SAVE ADDRESS</button>
+        <button class="cancel">CANCEL</button>
+    </div>
+</form>
+</html>
+<!-- Animation - line moving->
+     position -->

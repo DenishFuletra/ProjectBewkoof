@@ -1,0 +1,82 @@
+body {
+    font-family: 'Yantramanav', sans-serif;
+    margin: 0 auto;
+
+}
+
+.navigation-links {
+    display: flex;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-links .logo {
+    width: 17%;
+}
+
+.navigation-links .logo img {
+    width: 96%;
+}
+
+.navigation-links>div+div ul li {
+    display: inline-block;
+    margin: 0px 10px;
+
+}
+
+.navigation-links>div+div ul li a {
+    text-decoration: none;
+}
+
+.navigation-links>div+div ul li input {
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.login-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-up>div input {
+
+    padding: 10px 30px;
+    font-size: 12px;
+    box-shadow: none;
+    width: 100%;
+    background: #eaeaea;
+    border: 1px solid transparent;
+    color: rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    margin: 0;
+    padding-left: 50px;
+
+
+}
+
+.login-up a {
+    text-decoration: none;
+    margin-left: 50px;
+    color: black;
+    font-size: 18px;
+}
+
+.login-up i {
+    margin: 0px 7px;
+    font-size: 20px;
+}
+
+.login-up button {
+    position: absolute;
+    border: none;
+    /* background: #e4e1e1; */
+    background: #EAEAEA;
+    margin-top: 7px;
+}
+
+
