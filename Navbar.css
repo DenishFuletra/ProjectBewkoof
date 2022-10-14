@@ -67,7 +67,6 @@ body {
     margin-left: 50px;
     color: black;
     font-size: 18px;
-    margin-left: 17px;
 }
 
 .login-up i {
@@ -336,13 +335,15 @@ form input[type=submit] {
 
 /* *********Products Page css***************************** */
 #products {
-    width: 1170px;
+    width: 1340px;
     margin: auto;
 }
 
 #products>div ul li {
     display: inline-block;
     margin: 0px 6px;
+    float: left;
+    margin-bottom: 29px;
 }
 
 #products>div ul li a {
@@ -351,11 +352,12 @@ form input[type=submit] {
 }
 
 .tag {
-    margin-top: 40px;
+    margin-top: 42px;
     margin-left: 30px;
     font-size: 28px;
     border-bottom: 3px solid orangered;
-    width: 15%;
+    width: 17%;
+    margin-bottom: 26px;
 }
 
 /* section divided css */
@@ -386,7 +388,7 @@ form input[type=submit] {
 /* Style the sidenav links and the dropdown button */
 .small_Section .sidenav a,
 .dropdown-btn {
-    padding: 6px 8px 6px 4px;
+    padding: 21px 8px 6px 4px;
     text-decoration: none;
     font-size: 15px;
     color: #2d2c2c;
@@ -420,9 +422,10 @@ form input[type=submit] {
     float: right;
     padding-right: 10px;
     position: absolute;
-    left: 30%;
+    left: 25%;
     font-size: 18px;
     color: #545353;
+    z-index: -30;
 }
 
 /* Some media queries for responsiveness */
@@ -459,7 +462,8 @@ form input[type=submit] {
 
 .priceTag {
     font-size: 18px;
-    margin-top: -14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-weight: 600;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
@@ -474,6 +478,8 @@ form input[type=submit] {
 
 .small_Section h3 {
     color: rgb(74, 73, 73);
+    float: left;
+    margin-bottom: 28px;
 }
 
 /* sorting css */
@@ -501,8 +507,10 @@ form input[type=submit] {
 /* ******************Product 2 page css starts************************************************************ */
 
 #products2 {
-    width: 1170px;
+    width: 1170px !important;
     margin: auto;
+    z-index: -4;
+    position: relative;
 }
 
 #products2>div ul li {
@@ -598,7 +606,7 @@ form input[type=submit] {
 
 /* content section starts */
 
-#products2 .content {
+.content {
     position: relative;
     top: -20px;
     left: -30px;
@@ -609,13 +617,25 @@ form input[type=submit] {
     font-size: 22px;
     letter-spacing: 0.5px;
     color: #504e4e;
+    float: left;
+    margin-top: 41px;
 }
 
 .content h3+p {
     color: grey;
     font-size: 20px;
-    margin-top: -17px;
+    margin-top: 76px;
     letter-spacing: 0.5px;
+    float: left;
+    /* margin-right: -39px; */
+    position: relative;
+    left: -23%;
+}
+
+.content .priceNo+p {
+    float: left;
+    position: absolute;
+    margin-top: 29%;
 }
 
 .box1 {
@@ -637,6 +657,8 @@ form input[type=submit] {
 .content .priceNo {
     display: flex;
     align-items: center;
+    float: left;
+    margin-top: 20px;
 }
 
 .content .priceNo p:nth-child(1) {
@@ -663,8 +685,37 @@ form input[type=submit] {
 .box-2 {
     display: flex;
     align-items: center;
-    margin-top: -20px;
+    margin-top: 86px;
+    float: left;
+    margin-left: -189px;
+}
 
+.buttontags2 {
+    float: left;
+}
+
+.start {
+    float: left;
+    margin-top: 40px;
+}
+
+.lines {
+    float: left;
+    margin-top: 30px;
+
+}
+
+.lines p {
+
+    font-size: 13px;
+    width: 100%;
+    padding: 14px 0px;
+
+}
+
+.btnTango {
+    float: left;
+    margin-top: 20px;
 }
 
 .content div+div+p {
