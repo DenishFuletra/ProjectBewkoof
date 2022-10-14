@@ -75,9 +75,9 @@
         <!-- sorting -->
 
         <div class="sort">
-            SORT BY &nbsp; <select name="" id="sortPrices" onchange="handleSalarySort()">
+            SORT BY &nbsp; <select name="" id="sortPrices" onchange="handlePriceSort()">
                 <option value="">Popular</option>
-                <option value="">new</option>
+                <option value="new">new</option>
                 <option value="htl">Price: High to Low</option>
                 <option value="lth">Price: Low to High</option>
             </select>
@@ -382,9 +382,10 @@
 
 
     ]
-    displayProducts(mensData)
-    function displayProducts() {
-        mensData.map(function (e) {
+    displayProducts(mensData);
+    function displayProducts(result) {
+        document.querySelector('#large_Section').innerHTML = "";
+        result.map(function (e) {
 
 
             var div = document.createElement('div');
@@ -435,22 +436,30 @@
     // res.push(obj);
     // console.log(res)
 
-    function handleSalarySort() {
+    function handlePriceSort() {
         var selelectedvalue = document.getElementById("sortPrices").value;
+        let result = [];
         console.log(selelectedvalue);
         if (selelectedvalue === "lth") {
-            mensData.sort(function (a, b) {
+            result = mensData.sort(function (a, b) {
                 return a.price - b.price;
             });
         }
         if (selelectedvalue === "htl") {
-            mensData.sort(function (a, b) {
+            result = mensData.sort(function (a, b) {
                 return b.price - a.price;
             });
 
         }
-        console.log(mensData)
-        displayProducts(mensData);
+
+        if (selelectedvalue === "new") {
+            displayProducts(mensData);
+        }
+        else {
+            displayProducts(result);
+        }
+
+        console.log(result)
 
     }
 
