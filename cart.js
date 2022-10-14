@@ -1,49 +1,49 @@
-var datamen = [
-    {
-        "image": "https://images.bewakoof.com/t320/big-herbal-weed-lightweight-adjustable-strap-men-slider-333615-1655749605-1.jpg",
+// var datamen = [
+//     {
+//         "image": "https://images.bewakoof.com/t320/big-herbal-weed-lightweight-adjustable-strap-men-slider-333615-1655749605-1.jpg",
 
-        "name": "Titan Neo Iv Analog Silver Dial Men's Watch-1802SL01 / 1802SL01",
+//         "name": "Titan Neo Iv Analog Silver Dial Men's Watch-1802SL01 / 1802SL01",
 
-        "price": "1500",
+//         "price": "1500",
 
-        "StrikePrice": "2000",
+//         "StrikePrice": "2000",
 
-        "size": "L",
+//         "size": "L",
 
-        "Qty": "1"
+//         "Qty": "1"
 
-    },
-    {
-        "image": "https://m.media-amazon.com/images/I/71pVPpqzqwL._AC_UL320_.jpg",
+//     },
+//     {
+//         "image": "https://m.media-amazon.com/images/I/71pVPpqzqwL._AC_UL320_.jpg",
 
-        "name": "AAA Crystal 18k Rose Gold Stylish Jewellery for Women and Girls",
+//         "name": "AAA Crystal 18k Rose Gold Stylish Jewellery for Women and Girls",
 
-        "price": "179",
+//         "price": "179",
 
-        "StrikePrice": "2000",
+//         "StrikePrice": "2000",
 
-        "size": "L",
+//         "size": "L",
 
-        "Qty": "1"
-    },
-    {
-        "image": "https://m.media-amazon.com/images/I/71pVPpqzqwL._AC_UL320_.jpg",
+//         "Qty": "1"
+//     },
+//     {
+//         "image": "https://m.media-amazon.com/images/I/71pVPpqzqwL._AC_UL320_.jpg",
 
-        "name": "AAA Crystal 18k Rose Gold Stylish Jewellery for Women and Girls",
+//         "name": "AAA Crystal 18k Rose Gold Stylish Jewellery for Women and Girls",
 
-        "price": "179",
+//         "price": "179",
 
-        "StrikePrice": "2000",
+//         "StrikePrice": "2000",
 
-        "size": "L",
+//         "size": "L",
 
-        "Qty": "1"
-    }
-];
-// localStorage.setItem("data",JSON.stringify(datamen));
+//         "Qty": "1"
+//     }
+// ];
+//  localStorage.setItem("cartData",JSON.stringify(datamen));
 var data = JSON.parse(localStorage.getItem("cartData")) || [];
 var logindata = JSON.parse(localStorage.getItem("loginData"));
-username(logindata);
+ username(logindata);
 addcart(data);
 function addcart(data) {
     document.querySelector("#final").innerText = null
