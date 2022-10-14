@@ -509,8 +509,8 @@ form input[type=submit] {
 #products2 {
     width: 1170px !important;
     margin: auto;
-    z-index: -4;
-    position: relative;
+    /* z-index: -4;
+    position: relative; */
 }
 
 #products2>div ul li {
