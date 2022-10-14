@@ -182,7 +182,6 @@ function totalprice() {
         mrp = +mrp + elem.Qty * elem.StrikePrice;
         bag = +bag + elem.Qty * (elem.StrikePrice - elem.price);
 
-
     })
     // console.log(bag);
     document.querySelector("#totalMRP").innerText = "₹" + mrp;
