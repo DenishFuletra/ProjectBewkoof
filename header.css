@@ -221,13 +221,12 @@ body {
 }
 
 /* Menu styling */
-
 #menu {
     display: flex;
     margin: auto;
-    padding: 15px 0px;
+    padding: 5px 0px 15px;
     justify-content: center;
-    font-size: large;
+    font-size: 17px;
     background-color: white;
 }
 
