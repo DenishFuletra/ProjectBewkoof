@@ -58,7 +58,7 @@ body{
 #categories>div>img{
 height:80%;
 width: 100%;
-margin:-10px ;
+/* margin:10px ; */
 }
 #popularCategories{
     display:grid;
