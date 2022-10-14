@@ -5,26 +5,23 @@ body{
     display: flex;
     margin: auto;
     justify-content: space-evenly;
-    transition:all 0.5s ease-out ;
 }
-#linetaxt>p{
-    background-color: rgb(72, 71, 71);
-    text-align: center;
-    color: white;
-    height: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    animation: slide 15s linear infinite;
-        animation-duration: 15s;
-        animation-timing-function: linear;
-        animation-delay: 0s;
-        animation-iteration-count: infinite;
-        animation-direction: normal;
-        animation-fill-mode: none;
-        animation-play-state: running;
-        animation-name: slide;
-}
+    #linetext>span {
+        display: block;
+        /* Important to give the content a width */
+    
+        width: 100%;
+        transform: translateX(100%);
+        /* Animation start out of the screen */
+        animation: move 12s linear infinite;
+            
+    }
+    /* Create the animation */
+    @keyframes move {
+        to {
+            transform: translateX(-100%);
+        }
+    }
 #firstRowImg > div{
     height: 450px;
     margin-bottom: 30px;
