@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>product page </title>
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="women_products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <!-- navbar section starts from here -->
+    <div class=" navbar">
+
+
+
+        <div class="navigation-links">
+
+            <div class="logo">
+                <img src="https://images.bewakoof.com/web/ic-desktop-normal-bwkf-logo.svg" alt="logo">
+            </div>
+
+            <div>
+                <ul>
+                    <li><a href="#">MEN</a></li>
+                    <li><a href="#">WOMEN</a></li>
+                    <li><a href="#">MOBILE COVERS</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="login-up">
+            <div>
+                <button><i class="fa-solid fa-magnifying-glass"></i> </button>
+
+                <input type="search" placeholder="Search by product, category or collection">
+            </div>
+            <div>
+                <a id="chnagetext" href="siginUp.html">Login</a>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-sharp fa-solid fa-lock"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- products section starts from here -->
+
+    <div id="products">
+        <div>
+            <ul>
+                <li> <a href="#">Home</a> /</li>
+                <li> <a href="#">Mens Clothing /</a></li>
+                <li><a href="#">Category</a></li>
+
+            </ul>
+        </div>
+
+
+        <h2 class="tag">Men Clothing</h2>
+
+        <!-- sorting -->
+
+        <div class="sort">
+            SORT BY &nbsp; <select name="" id="sortPrices" onchange="handleSalarySort()">
+                <option value="">Popular</option>
+                <option value="">new</option>
+                <option value="htl">Price: High to Low</option>
+                <option value="lth">Price: Low to High</option>
+            </select>
+        </div>
+
+        <!-- Main section  -->
+        <div class="main_Section">
+
+            <!--  small section -->
+
+            <div class="small_Section">
+                <h3>FILTERS</h3>
+                <div class="sidenav">
+                    <button class="dropdown-btn">Gender
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Men</a>
+                        <a href="#">Women</a>
+                        <a href="#">Unisex 3</a>
+                    </div>
+                    <hr>
+
+                    <button class="dropdown-btn">Category
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">T-Shirt</a>
+                        <a href="#">Joggers</a>
+                        <a href="#">Boxers</a>
+                        <a href="#">Swaetshirt</a>
+                        <a href="#">Pyjamas</a>
+                        <a href="#">Dress</a>
+                        <a href="#">Vest</a>
+                        <a href="#">Hoodies</a>
+                        <a href="#">Cloth Mask</a>
+                        <a href="#">Swaeters</a>
+                        <a href="#">Mobile Covers</a>
+                        <a href="#">Mugs</a>
+                        <a href="#">Kurta</a>
+                        <a href="#">Shirt</a>
+                    </div>
+                    <hr>
+                    <button class="dropdown-btn">Sizes
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">XS</a>
+                        <a href="#">S</a>
+                        <a href="#">M</a>
+                        <a href="#">L</a>
+                        <a href="#">XL</a>
+                        <a href="#">2XL</a>
+                        <a href="#">3XL</a>
+                        <a href="#">4XL</a>
+                        <a href="#">5XL</a>
+                        <a href="#">6XL</a>
+                    </div>
+                    <hr>
+                    <button class="dropdown-btn">Brand
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <hr>
+                    <button class="dropdown-btn">Color
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <hr>
+                    <button class="dropdown-btn">Design
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <hr>
+                    <button class="dropdown-btn">Fit
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <hr>
+                    <button class="dropdown-btn">Sleeve
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <hr>
+                    <button class="dropdown-btn">Neck
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <hr>
+                    <button class="dropdown-btn">Type
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <hr>
+                    <button class="dropdown-btn">Ratings
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <hr>
+                    <button class="dropdown-btn">Offers
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <hr>
+                    <button class="dropdown-btn">Discount
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <hr>
+                    <button class="dropdown-btn">Sort By
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                    <hr>
+
+                </div>
+
+
+            </div>
+            <!-- Large section -->
+            <div id="large_Section">
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        });
+    }
+
+
+
+    // ***********************************
+    // Displaying the mens data
+    var womensData= [
+     {
+      "image": "https://images.bewakoof.com/t640/extradordinary-woo-boyfriend-t-shirt-547385-1665131022-1.jpg",
+      "url": "https://www.bewakoof.com/p/extradordinary-woo-boyfriend-t-shirt-women",
+      "name": "Women's Black Extradordinary Woo Graphic Printed Boyfriend T-shirt",
+      "name_url": "https://www.bewakoof.com/p/extradordinary-woo-boyfriend-t-shirt-women",
+      price: 399,
+      age: 8,
+      "price_url": "https://www.bewakoof.com/p/extradordinary-woo-boyfriend-t-shirt-women"
+     },
+     {
+      "image": "https://images.bewakoof.com/t640/women-s-black-see-you-never-graphic-printed-oversized-t-shirt-547481-1665390342-1.jpg",
+      "url": "https://www.bewakoof.com/p/womens-black-see-you-never-graphic-printed-oversized-t-shirt",
+      "name": "Women's Black See You Never Graphic Printed Oversized T-shirt",
+      "name_url": "https://www.bewakoof.com/p/womens-black-see-you-never-graphic-printed-oversized-t-shirt",
+      price: 449,
+      age: 12,
+      "price_url": "https://www.bewakoof.com/p/womens-black-see-you-never-graphic-printed-oversized-t-shirt"
+     },
+     {
+      "image": "https://images.bewakoof.com/t640/women-s-purple-see-you-never-graphic-printed-boyfriend-t-shirt-547484-1665390178-1.jpg",
+      "url": "https://www.bewakoof.com/p/womens-purple-see-you-never-graphic-printed-boyfriend-t-shirt",
+      "name": "Women's Purple See You Never Graphic Printed Boyfriend T-shirt",
+      "name_url": "https://www.bewakoof.com/p/womens-purple-see-you-never-graphic-printed-boyfriend-t-shirt",
+      price: 329,
+      age: 10,
+      "price_url": "https://www.bewakoof.com/p/womens-purple-see-you-never-graphic-printed-boyfriend-t-shirt"
+     },
+     {
+      "image": "https://images.bewakoof.com/t640/invalid-opinion-oversized-fit-t-shirt-542423-1663221834-1.jpg",
+      "url": "https://www.bewakoof.com/p/invalid-opinion-oversized-fit-t-shirt",
+      "name": "Women's Purple Invalid Opinion Graphic Printed Oversized T-shirt",
+      "name_url": "https://www.bewakoof.com/p/invalid-opinion-oversized-fit-t-shirt",
+      price: 597,
+      age: 13,
+      "price_url": "https://www.bewakoof.com/p/invalid-opinion-oversized-fit-t-shirt"
+     },
+     {
+      "image": "https://images.bewakoof.com/t640/women-s-aop-boyfriend-fit-t-shirt-507985-1663262957-1.jpg",
+      "url": "https://www.bewakoof.com/p/womens-aop-boyfriend-fit-t-shirt-women",
+      "name": "Women's Pink Camouflag Oversized T-shirt",
+      "name_url": "https://www.bewakoof.com/p/womens-aop-boyfriend-fit-t-shirt-women",
+      price: 599,
+      age: 11,
+      "price_url": "https://www.bewakoof.com/p/womens-aop-boyfriend-fit-t-shirt-women"
+     },
+     {
+      "image": "https://images.bewakoof.com/t640/women-s-black-tropical-vibes-typography-oversized-t-shirt-493433-1655750394-1.jpg",
+      "url": "https://www.bewakoof.com/p/tropical-vibes-oversized-fit-t-shirt",
+      "name": "Women's Black Tropical Vibes Typography Oversized T-shirt",
+      "name_url": "https://www.bewakoof.com/p/tropical-vibes-oversized-fit-t-shirt",
+      price: 597,
+      age: 15,
+      "price_url": "https://www.bewakoof.com/p/tropical-vibes-oversized-fit-t-shirt"
+     },
+     {
+      "image": "https://images.bewakoof.com/t640/women-s-aop-boyfriend-fit-t-shirt-508004-1663262994-1.jpg",
+      "url": "https://www.bewakoof.com/p/womens-aop-boyfriend-fit-t-shirt-women-white",
+      "name": "Women's Abstract Printed Oversized T-shirt",
+      "name_url": "https://www.bewakoof.com/p/womens-aop-boyfriend-fit-t-shirt-women-white",
+      price: 599,
+      age: 15,
+      "price_url": "https://www.bewakoof.com/p/womens-aop-boyfriend-fit-t-shirt-women-white"
+     },
+     {
+      "image": "https://images.bewakoof.com/t640/customizable-women-black-round-neck-t-shirt-443869-1655813695-1.jpg",
+      "url": "https://www.bewakoof.com/custom-design?pid=443869",
+      "name": "Customizable Women Black Round Neck T-Shirt",
+      "name_url": "https://www.bewakoof.com/custom-design?pid=443869",
+      price: 499,
+      age: 14,
+      "price_url": "https://www.bewakoof.com/custom-design?pid=443869"
+     },
+     {
+      "image": "https://images.bewakoof.com/t640/women-s-blue-beary-lucky-graphic-printed-boyfriend-t-shirt-547416-1665147229-1.jpg",
+      "url": "https://www.bewakoof.com/p/womens-blue-beary-lucky-graphic-printed-boyfriend-t-shirt",
+      "name": "Women's Blue Beary Lucky Graphic Printed Boyfriend T-shirt",
+      "name_url": "https://www.bewakoof.com/p/womens-blue-beary-lucky-graphic-printed-boyfriend-t-shirt",
+      price: 329,
+      age: 12,
+      "price_url": "https://www.bewakoof.com/p/womens-blue-beary-lucky-graphic-printed-boyfriend-t-shirt"
+     }
+    ]
+    displayProducts(womensData);
+    function displayProducts(result) {
+        document.querySelector('#large_Section').innerHTML = "";
+        result.map(function (e) {
+
+
+            var div = document.createElement('div');
+            div.setAttribute("class", "largeStyle");
+
+            var images = document.createElement('img');
+            images.setAttribute("src", e.image);
+
+
+            var priceBox = document.createElement("div");
+
+            var texts = document.createElement("h5");
+            texts.innerText = "Bewakoof"
+            texts.setAttribute("class", "H5tag");
+
+
+
+            var productName = document.createElement('p');
+            productName.innerText = e.name
+
+            var prices = document.createElement('p');
+            prices.innerText = "₹ " + e.price;
+            prices.setAttribute("class", "priceTag");
+
+            var priceLink = document.createElement('a');
+            //priceLink.setAttribute("href", e.price_url)
+            priceLink.href = "product2page.html";
+            priceLink.innerText = '₹419 For Tribe Members';
+            priceLink.setAttribute("class", "price_link");
+
+
+            var text = document.createElement("h6");
+            priceBox.append(images, texts, productName, prices, priceLink);
+            div.append(priceBox);
+
+            document.querySelector('#large_Section').append(div);
+
+        })
+    }
+
+    //   sorting js starts from here
+
+    // const res = JSON.parse(mensData);
+    // // const res2 = JSON.parse(res);
+
+
+
+    // res.push(obj);
+    // console.log(res)
+
+    function handleSalarySort() {
+        var selelectedvalue = document.getElementById("sortPrices").value;
+        let result = [];
+        console.log(selelectedvalue);
+        if (selelectedvalue === "lth") {
+            result = womensData.sort(function (a, b) {
+                return a.price - b.price;
+            });
+        }
+        if (selelectedvalue === "htl") {
+            result = womensData.sort(function (a, b) {
+                return b.price - a.price;
+            });
+
+        }
+        console.log(result)
+        displayProducts(result);
+
+    }
+
+    //localStorage.setItem('datas', JSON.stringify(mensData));
+
+</script>
