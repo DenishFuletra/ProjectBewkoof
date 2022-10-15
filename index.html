@@ -20,7 +20,7 @@
       <div id="top-line">
         <div>
           <p>Offers</p>
-          <p>Facebook</p>
+          <p>Fanbook</p>
           <p>Download App</p>
           <p>Tribe Membership</p>
         </div>
@@ -399,6 +399,7 @@
         <div>
           <div>
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
+
             <input
               type="search"
               placeholder="Search by product, category or collection"
@@ -428,7 +429,7 @@
     </div>
     <!-- end of header -->
 
-    <!--Running message  -->
+    <!-- Scrolling message  -->
     <div id="message">
       <span>We are now delivering across UAE. Let the shopping begin!</span>
     </div>
@@ -782,9 +783,10 @@
     })
 
     var navData = JSON.parse(localStorage.getItem("loginData"));
+
     navData.map(function (elem) {
-    document.querySelector("#chnagetext").innerText = elem.name;
-    console.log(elem.name);
-});
+        document.querySelector("#chnagetext").innerText = elem.name;
+        console.log(elem.name);
+    });
   </script>
 </html>
