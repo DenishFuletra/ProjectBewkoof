@@ -44,21 +44,6 @@ var datamen = [
         "size": "L",
         "Qty": "1"
     },
-    {
-                "image": "https://m.media-amazon.com/images/I/71pVPpqzqwL._AC_UL320_.jpg",
-        
-                "name": "AAA Crystal 18k Rose Gold Stylish Jewellery for Women and Girls",
-        
-                "price": "600",
-        
-                "StrikePrice": "1200",
-        
-                "size": "L",
-        
-                "Qty": "1"
-            },
-
-
 ];
 
 document.querySelector('.buttontags2').addEventListener('submit', addCart)
