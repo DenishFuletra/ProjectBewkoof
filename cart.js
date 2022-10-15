@@ -214,7 +214,7 @@ function coupenCode() {
         document.querySelector("#subtotal").innerText = "₹" + (total);
         document.querySelector("#total").innerText = "₹" + (total);
         document.querySelector("#bagDiscount1").innerText = "₹" + bag;
-        alert("Congralution you got 10% discount");
+        alert("Congralution you got 20% discount");
     }
 
 }
