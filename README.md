@@ -6,10 +6,10 @@ We have use lots of functionality here
  <ul>
    <li>Home Page,</li>
    <li>User Signup and Login,</li>
-   <li>Movies List and filters,</li>
-   <li>Movies Description,</li>
-   <li>Show Timings,</li>
-   <li>Seat Selection, and</li>
+   <li>Mens Page</li>
+   <li>Women and Kid Section,</li>
+   <li>Product Category Page,</li>
+   <li>Payment Page</li>
    <li>Checkout Page</li>
  </ul>
 
