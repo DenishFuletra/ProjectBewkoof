@@ -18,5 +18,8 @@ We have use lots of functionality here
     <li>HTML</li>
     <li>CSS</li>
     <li>JavaScript</li>
-    
   </ul>
+  
+   <ins>The Demo of Website:</ins> <br/><br/>
+  The User on Visiting the website lands on the home page:
+![Screenshot (2253)](https://user-images.githubusercontent.com/113687128/214493614-dbe4be35-7b1b-4208-b6b9-2477380182d1.png)
