@@ -34,4 +34,5 @@ Then We want to select our size and can add to wishlist
 ![Screenshot (2256)](https://user-images.githubusercontent.com/113687128/214495007-217a3a13-ba1e-4cb5-9db8-1fa432d8148a.png)
 
 Now the final transcation is here
-![Screenshot (2257)](https://user-images.githubusercontent.com/113687128/214495036-cfd226d2-6377-4df4-8cbd-37b93c67b632.png)
+
+![Screenshot (2257)](https://user-images.githubusercontent.com/113687128/214495184-5bd5f50a-e56a-400d-a63b-3bef6a973830.png)
