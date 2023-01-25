@@ -23,3 +23,15 @@ We have use lots of functionality here
    <ins>The Demo of Website:</ins> <br/><br/>
   The User on Visiting the website lands on the home page:
 ![Screenshot (2253)](https://user-images.githubusercontent.com/113687128/214493614-dbe4be35-7b1b-4208-b6b9-2477380182d1.png)
+
+Then they have to Login to access the account
+![Screenshot (2254)](https://user-images.githubusercontent.com/113687128/214494295-b83faeeb-7336-4ff2-b2aa-cde28898a5de.png)
+
+Now, we have Mens Collection page where we have to access the products
+![Screenshot (2255)](https://user-images.githubusercontent.com/113687128/214494869-cd5eab73-bfe1-496c-97c6-db2652a2d633.png)
+
+Then We want to select our size and can add to wishlist 
+![Screenshot (2256)](https://user-images.githubusercontent.com/113687128/214495007-217a3a13-ba1e-4cb5-9db8-1fa432d8148a.png)
+
+Now the final transcation is here
+![Screenshot (2257)](https://user-images.githubusercontent.com/113687128/214495036-cfd226d2-6377-4df4-8cbd-37b93c67b632.png)
